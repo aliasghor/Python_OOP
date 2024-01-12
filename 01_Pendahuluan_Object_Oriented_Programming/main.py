@@ -1,5 +1,5 @@
 """
-    An object orinted programming is a paradigm in programming where every variabels that you have crated is called an "object" or an "instance"
+    An object oriented programming is a paradigm in programming where every variabels that you have created is called an "object" or an "instance"
 
     and OOP(object orinted programming) is a paradigm where you relies on class and object
 
@@ -11,7 +11,7 @@
 
     - Object/Instance:
         An object/instance is a variabel that you have just made from a class
-        and an object has 2 values.and those values are:
+        and an object has 2 important values and those values are:
             - Attributes(Like names,age,salary etc)
             - Methods(Spesific purporses or Spesific Functionality.like a person gets a salary, a person wants to meet with someone etc)
 """
