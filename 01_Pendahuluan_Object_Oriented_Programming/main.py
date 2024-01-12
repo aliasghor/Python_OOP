@@ -1,7 +1,7 @@
 """
     An object oriented programming is a paradigm in programming where every variabels that you have created is called an "object" or an "instance"
 
-    and OOP(object orinted programming) is a paradigm where you relies on class and object
+    and OOP(object oriented programming) is a paradigm where you relies on class and object
 
     a furthermore explaination about what is class an object
 
