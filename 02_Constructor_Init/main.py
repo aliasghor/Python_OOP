@@ -8,7 +8,7 @@ class Hero:
     """
     def __init__(self,name):
         """
-            self referes to an object that we've just made
+            self refers to an object that we've just made
             so without a self keyword this __init__() method
             cannot be executed.so self keyword is a must
             everytime when we want to interact with an object
