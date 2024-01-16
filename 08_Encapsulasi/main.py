@@ -1,41 +1,26 @@
-"""
-    Encapsulation is to make every variabels private
-"""
-
 class Hero:
 
-    def __init__(self,name: str, health: int, attackPower: int):
+    # Encapsulation is to make all instances variables and class variabels private
+    def __init__(self,name: str, health: int):
         self.__name = name
         self.__health = health
-        self.__attackPower = attackPower
 
-    # Getter.getter is used to get the private instance or class variabels
-    def getName(self):
-        return self.__name
-    
+    # Creating a getter method.getter is used to "get" the private attributes and class variable
     def getHealth(self):
         return self.__health
     
-    def getAttackPower(self):
-        return self.__attackPower
-    
-    # Setter.setter is used to "set" the current attributes/instance variabels to the newest one.what i mean is that setter is used to change the previous private variable value to the new private variable value
-
-    def healthUp(self,newHealthValue: int):
-        self.__health += newHealthValue
-        return self.__health
-    
-    def attack(self,opponentName: object ,totalDamage: int):
-        print(f"{self.__name} attack {opponentName.__name}")
-        opponentName.__health -= totalDamage
+    # Creating a setter method.a setter method is used to "set" or "change" the previous attributes value to the newest one
+    def healthUp(self,totalHealthUp: int):
+        self.__health += totalHealthUp
         return self.__health
 
+    
 
-gerry = Hero("Gerry",100,10)
-mogi = Hero("Mogi",100,40)
+gerry = Hero("Gerry",100)
 
-gerry.attack(mogi,gerry.getAttackPower())
-print(f"Mogi's health = {mogi.getHealth()}")
+# Get the instance health private variabel
+print(f"Get the instance health private variabel: {gerry.getHealth()}")
 
+# Set the current private instance variabel to the newer one
 gerry.healthUp(10)
-print(f"Gerry's new health = {gerry.getHealth()}")
+print(f"Total health after being changed: {gerry.getHealth()}")
